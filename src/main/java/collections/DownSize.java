@@ -1,8 +1,5 @@
 package collections;
 
-import oop.library.Item;
-
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 

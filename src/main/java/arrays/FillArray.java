@@ -1,6 +1,6 @@
 package arrays;
+
 import java.util.Arrays;
-import java.util.Random;
 import java.util.random.RandomGenerator;
 public class FillArray {
     public static double[] fillArray(int size, double value, boolean addNoise){
