@@ -14,11 +14,8 @@ public class WordFrequency {
             words.addAll(lineToWords(line));
         }
         for(String word : words){
-            if(res.containsKey(word)){
-                res.replace(word, res.get(word) + 1);
-            }else{
-                res.put(word, 1);
-            }
+            res.computeIfPresent(word, (_, v) -> v+1);
+            res.putIfAbsent(word, 1);
         }
         return res;
     }

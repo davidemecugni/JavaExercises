@@ -3,7 +3,7 @@ package arrays;
 public class DivideArrays {
     public static double[] divideArrays(double[] v1, double[] v2){
         if(v1.length != v2.length){
-            return null;
+            return new double[0];
         }
         double[] out = new double[v1.length];
         for(int i=0; i<v1.length;i++){
